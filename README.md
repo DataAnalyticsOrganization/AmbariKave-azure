@@ -3,12 +3,8 @@ In this repo we contain publishable azure deployments of the AmbariKave. Current
 
 The goal is to make the environment provisionable via a provision button. This will only work with these buttons: 
 
-<a href="xxxx" target="_blank">
-    <img src="http://azuredeploy.net/deploybutton.png"/>
-</a>
-<a href="xxxx" target="_blank">
-    <img src="http://armviz.io/visualizebutton.png"/>
-</a>
+[![deploy](img/deploybutton.png)]()
+[![deploy](img/visualizebutton.png)]()
 
 Currently that won't work since the installation of the associated blueprint isn't automated. Here is the reference HTML we have to provide:
 
