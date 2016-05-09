@@ -1,0 +1,50 @@
+ {
+	"blueprint": "KAVEAzure",
+	"default_password": "admin",
+	"host_groups": [{
+		"name": "admin",
+		"configurations": [],
+		"hosts": [{
+			"fqdn": "ambari.kave.io"
+		}]
+	}, {
+		"name": "gateway",
+		"configurations": [{
+			"kavelanding": {
+				"AMBARI_ADMIN": "admin",
+				"AMBARI_ADMIN_PASS": "admin"
+			}
+		}],
+		"hosts": [{
+			"fqdn": "gate.kave.io"
+		}]
+	}, {
+		"name": "namenode-1",
+		"configurations": [],
+		"hosts": [{
+			"fqdn": "nno-0.kave.io"
+		}]
+	}, {
+		"name": "namenode-2",
+		"configurations": [],
+		"hosts": [{
+			"fqdn": "nno-1.kave.io"
+		}]
+	}, {
+		"name": "data",
+		"configurations": [],
+		"hosts": [{
+			"fqdn": "data-0.kave.io"
+		}, {
+			"fqdn": "data-1.kave.io"
+		}, {
+			"fqdn": "data-2.kave.io"
+		}]
+	}, {
+		"name": "ci",
+		"configurations": [],
+		"hosts": [{
+			"fqdn": "ci.kave.io"
+		}]
+	}]
+}
